@@ -1,0 +1,59 @@
+<style>
+.mode-landscape .sl-split { flex-direction: row; gap: 2.5rem; }
+.mode-portrait .sl-split { flex-direction: column; gap: 1.5rem; }
+.mode-landscape .sl-col { width: 50%; }
+.mode-portrait .sl-col { width: 100%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12">
+
+    <!-- Label -->
+    <div class="mb-8">
+      <span class="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full" style="background-color: {{config.theme.accentColor}}; color: white; font-family: {{config.theme.fontFamily}};">Foundation</span>
+    </div>
+
+    <!-- Split -->
+    <div class="sl-split flex flex-1">
+
+      <!-- Problem -->
+      <div class="sl-col flex flex-col justify-center">
+        <h3 class="text-xs font-bold uppercase tracking-widest mb-4" style="color: {{config.theme.accentColor}}; font-family: {{config.theme.fontFamily}};">The Problem</h3>
+        <h2 class="text-3xl font-bold leading-tight mb-5" style="color: {{config.theme.primaryColor}}; font-family: {{config.theme.fontFamily}};">
+          Presence online yang harusnya simpel malah jadi rumit
+        </h2>
+        <p class="text-sm leading-relaxed mb-4" style="color: {{config.theme.secondaryColor}}; font-family: {{config.theme.fontFamily}}; opacity: 0.75;">
+          Membangun halaman personal seringkali membutuhkan terlalu banyak hal — framework, setup panjang, konten berlapis, dan waktu yang tidak sedikit. Padahal yang dibutuhkan hanya satu sapaan yang bersih.
+        </p>
+        <div class="flex flex-col gap-2 mt-2">
+          <div class="flex items-center gap-2">
+            <div class="w-1.5 h-1.5 rounded-full" style="background-color: {{config.theme.accentColor}};"></div>
+            <span class="text-sm" style="color: {{config.theme.secondaryColor}}; font-family: {{config.theme.fontFamily}}; opacity: 0.7;">Terlalu banyak tools, terlalu sedikit hasil</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="w-1.5 h-1.5 rounded-full" style="background-color: {{config.theme.accentColor}};"></div>
+            <span class="text-sm" style="color: {{config.theme.secondaryColor}}; font-family: {{config.theme.fontFamily}}; opacity: 0.7;">Maintenance yang terus-menerus</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="w-1.5 h-1.5 rounded-full" style="background-color: {{config.theme.accentColor}};"></div>
+            <span class="text-sm" style="color: {{config.theme.secondaryColor}}; font-family: {{config.theme.fontFamily}}; opacity: 0.7;">Kompleksitas mengalahkan tujuan awal</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Solution -->
+      <div class="sl-col flex flex-col justify-center rounded-2xl p-8" style="background-color: {{config.theme.primaryColor}};">
+        <h3 class="text-xs font-bold uppercase tracking-widest mb-4" style="color: {{config.theme.accentColor}}; font-family: {{config.theme.fontFamily}};">The Solution</h3>
+        <h2 class="text-3xl font-bold leading-tight mb-5" style="color: white; font-family: {{config.theme.fontFamily}};">
+          {{config.hero.headline}}
+        </h2>
+        <p class="text-sm leading-relaxed" style="color: white; font-family: {{config.theme.fontFamily}}; opacity: 0.7;">
+          Satu section. Satu greeting. Tidak lebih. {{config.appName}} adalah kehadiran digital paling bersih — langsung ke intinya, mudah dibagikan, dan selalu tersedia.
+        </p>
+        <div class="mt-8 pt-6" style="border-top: 1px solid rgba(255,255,255,0.15);">
+          <p class="text-sm italic font-light" style="color: white; font-family: {{config.theme.fontFamily}}; opacity: 0.45;">{{config.tagline}}</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
