@@ -1,0 +1,58 @@
+<style>
+.mode-landscape .sl-grid { grid-template-columns: repeat(3, 1fr); }
+.mode-portrait .sl-grid { grid-template-columns: 1fr; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12">
+
+    <!-- Header -->
+    <div class="mb-6">
+      <span class="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full" style="background-color: {{config.theme.accentColor}}; color: white; font-family: {{config.theme.fontFamily}};">Benefits</span>
+      <h2 class="text-3xl font-bold mt-4 mb-1" style="color: {{config.theme.primaryColor}}; font-family: {{config.theme.fontFamily}};">Kenapa ini cukup</h2>
+      <p class="text-sm" style="color: {{config.theme.secondaryColor}}; font-family: {{config.theme.fontFamily}}; opacity: 0.6;">{{config.tagline}}</p>
+    </div>
+
+    <!-- Metric Cards -->
+    <div class="sl-grid grid gap-4 flex-1">
+
+      <!-- Instant Presence -->
+      <div class="rounded-2xl p-6 flex flex-col justify-between" style="background-color: {{config.theme.primaryColor}};">
+        <p class="text-xs font-bold uppercase tracking-widest mb-2" style="color: {{config.theme.accentColor}}; font-family: {{config.theme.fontFamily}};">Presence</p>
+        <p class="text-5xl font-black mb-2" style="color: white; font-family: {{config.theme.fontFamily}};">100%</p>
+        <p class="text-sm leading-relaxed" style="color: white; font-family: {{config.theme.fontFamily}}; opacity: 0.65;">
+          Instant online presence. Tidak perlu setup panjang — langsung ada, langsung bisa dibagikan.
+        </p>
+      </div>
+
+      <!-- Zero Complexity -->
+      <div class="rounded-2xl p-6 flex flex-col justify-between" style="border: 2px solid {{config.theme.primaryColor}};">
+        <p class="text-xs font-bold uppercase tracking-widest mb-2" style="color: {{config.theme.accentColor}}; font-family: {{config.theme.fontFamily}};">Complexity</p>
+        <p class="text-5xl font-black mb-2" style="color: {{config.theme.primaryColor}}; font-family: {{config.theme.fontFamily}};">0</p>
+        <p class="text-sm leading-relaxed" style="color: {{config.theme.secondaryColor}}; font-family: {{config.theme.fontFamily}}; opacity: 0.75;">
+          Zero maintenance, zero overhead. Satu halaman yang tidak pernah perlu diutak-atik.
+        </p>
+      </div>
+
+      <!-- Always On -->
+      <div class="rounded-2xl p-6 flex flex-col justify-between" style="background-color: {{config.theme.accentColor}};">
+        <p class="text-xs font-bold uppercase tracking-widest mb-2" style="color: white; font-family: {{config.theme.fontFamily}}; opacity: 0.7;">Availability</p>
+        <p class="text-5xl font-black mb-2" style="color: white; font-family: {{config.theme.fontFamily}};">24/7</p>
+        <p class="text-sm leading-relaxed" style="color: white; font-family: {{config.theme.fontFamily}}; opacity: 0.75;">
+          Always-on. Dibagikan kapan saja, dibuka dari mana saja — satu link yang selalu siap.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- ROI Summary Block -->
+    <div class="mt-4 rounded-xl p-5 flex items-center justify-between" style="border: 1.5px solid {{config.theme.primaryColor}}; border-opacity: 0.2;">
+      <p class="text-sm font-semibold" style="color: {{config.theme.primaryColor}}; font-family: {{config.theme.fontFamily}};">
+        Satu link. Satu kesan pertama. Tidak ada yang lebih simpel dari ini.
+      </p>
+      <div class="w-8 h-8 rounded-full flex items-center justify-center" style="background-color: {{config.theme.primaryColor}};">
+        <span style="color: white; font-size: 1rem;">→</span>
+      </div>
+    </div>
+
+  </div>
+</section>
