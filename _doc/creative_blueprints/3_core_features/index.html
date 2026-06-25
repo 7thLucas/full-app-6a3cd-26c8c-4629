@@ -1,0 +1,67 @@
+<style>
+.mode-landscape .sl-grid { grid-template-columns: repeat(2, 1fr); }
+.mode-portrait .sl-grid { grid-template-columns: 1fr; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12">
+
+    <!-- Header -->
+    <div class="flex items-start justify-between mb-6">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full" style="background-color: {{config.theme.accentColor}}; color: white; font-family: {{config.theme.fontFamily}};">Core Features</span>
+        <h2 class="text-3xl font-bold mt-4" style="color: {{config.theme.primaryColor}}; font-family: {{config.theme.fontFamily}};">Yang ada di {{config.appName}}</h2>
+      </div>
+      <!-- Persona chip -->
+      <span class="px-4 py-1.5 rounded-full text-sm font-semibold" style="background-color: {{config.theme.primaryColor}}; color: white; font-family: {{config.theme.fontFamily}};">👤 Orias</span>
+    </div>
+
+    <!-- Feature Grid -->
+    <div class="sl-grid grid gap-3 flex-1">
+
+      <!-- Bold Greeting -->
+      <div class="rounded-2xl p-6 flex flex-col justify-between" style="background-color: {{config.theme.primaryColor}};">
+        <span class="text-3xl mb-3">👋</span>
+        <div>
+          <h3 class="text-base font-bold mb-1" style="color: white; font-family: {{config.theme.fontFamily}};">Bold Greeting</h3>
+          <p class="text-sm leading-relaxed" style="color: white; font-family: {{config.theme.fontFamily}}; opacity: 0.65;">
+            Headline "{{config.hero.headline}}" yang besar dan berani — langsung menyambut siapa pun yang datang.
+          </p>
+        </div>
+      </div>
+
+      <!-- Single Section -->
+      <div class="rounded-2xl p-6 flex flex-col justify-between" style="border: 2px solid {{config.theme.primaryColor}};">
+        <span class="text-3xl mb-3">⬛</span>
+        <div>
+          <h3 class="text-base font-bold mb-1" style="color: {{config.theme.primaryColor}}; font-family: {{config.theme.fontFamily}};">Single Section</h3>
+          <p class="text-sm leading-relaxed" style="color: {{config.theme.secondaryColor}}; font-family: {{config.theme.fontFamily}}; opacity: 0.75;">
+            Satu section, satu fokus. Tidak ada navigasi, tidak ada scroll — cukup satu momen yang sempurna.
+          </p>
+        </div>
+      </div>
+
+      <!-- Clean Design -->
+      <div class="rounded-2xl p-6 flex flex-col justify-between" style="border: 2px solid {{config.theme.primaryColor}};">
+        <span class="text-3xl mb-3">✨</span>
+        <div>
+          <h3 class="text-base font-bold mb-1" style="color: {{config.theme.primaryColor}}; font-family: {{config.theme.fontFamily}};">Clean Design</h3>
+          <p class="text-sm leading-relaxed" style="color: {{config.theme.secondaryColor}}; font-family: {{config.theme.fontFamily}}; opacity: 0.75;">
+            Estetika tipografi-first. Warna minimal, spacing yang bernafas, layout yang tenang dan fokus.
+          </p>
+        </div>
+      </div>
+
+      <!-- Instant Load -->
+      <div class="rounded-2xl p-6 flex flex-col justify-between" style="background-color: {{config.theme.accentColor}};">
+        <span class="text-3xl mb-3">⚡</span>
+        <div>
+          <h3 class="text-base font-bold mb-1" style="color: white; font-family: {{config.theme.fontFamily}};">Instant Load</h3>
+          <p class="text-sm leading-relaxed" style="color: white; font-family: {{config.theme.fontFamily}}; opacity: 0.75;">
+            Satu halaman ringan yang langsung terbuka — tidak ada waiting screen, tidak ada delay sama sekali.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
