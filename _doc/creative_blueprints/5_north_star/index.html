@@ -1,0 +1,68 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12">
+
+    <!-- Header -->
+    <div class="flex items-start justify-between mb-6">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full" style="background-color: {{config.theme.accentColor}}; color: white; font-family: {{config.theme.fontFamily}};">North Star</span>
+        <h2 class="text-3xl font-bold mt-4" style="color: {{config.theme.primaryColor}}; font-family: {{config.theme.fontFamily}};">Weekly Verified Greetings</h2>
+        <p class="text-sm mt-1" style="color: {{config.theme.secondaryColor}}; font-family: {{config.theme.fontFamily}}; opacity: 0.65;">
+          Satu angka yang menentukan apakah {{config.appName}} berjalan.
+        </p>
+      </div>
+      <span class="px-3 py-1 rounded-full text-xs font-bold" style="background-color: #fef3c7; color: #92400e; font-family: {{config.theme.fontFamily}};">
+        Projected impact — based on your inputs
+      </span>
+    </div>
+
+    <!-- Operation Definition -->
+    <div class="rounded-2xl p-5 mb-4" style="background-color: {{config.theme.primaryColor}};">
+      <h3 class="text-xs font-bold uppercase tracking-widest mb-2" style="color: {{config.theme.accentColor}}; font-family: {{config.theme.fontFamily}};">Verified Operation</h3>
+      <p class="text-xl font-bold mb-1" style="color: white; font-family: {{config.theme.fontFamily}};">Page visit / Greeting received</p>
+      <p class="text-xs leading-relaxed" style="color: white; font-family: {{config.theme.fontFamily}}; opacity: 0.55;">
+        A real visitor who lands on the page and receives the "{{config.hero.headline}}" greeting. Bounces under 3 seconds and edits are excluded.
+      </p>
+    </div>
+
+    <!-- Formula -->
+    <div class="rounded-2xl p-5 mb-4" style="border: 2px solid {{config.theme.primaryColor}};">
+      <h3 class="text-xs font-bold uppercase tracking-widest mb-4" style="color: {{config.theme.accentColor}}; font-family: {{config.theme.fontFamily}};">Formula</h3>
+      <div class="flex items-center gap-3 flex-wrap">
+
+        <div class="rounded-xl px-4 py-3 text-center" style="background-color: #fef3c7; border: 1.5px dashed #92400e;">
+          <p class="text-xs font-semibold mb-1" style="color: #92400e; font-family: {{config.theme.fontFamily}};">Assumption — adjust this</p>
+          <p class="text-2xl font-black" style="color: {{config.theme.primaryColor}}; font-family: {{config.theme.fontFamily}};">20</p>
+          <p class="text-xs" style="color: {{config.theme.secondaryColor}}; font-family: {{config.theme.fontFamily}};">visitors / week</p>
+        </div>
+
+        <span class="text-2xl font-black" style="color: {{config.theme.primaryColor}}; font-family: {{config.theme.fontFamily}};">×</span>
+
+        <div class="rounded-xl px-4 py-3 text-center" style="background-color: #f0f9ff;">
+          <p class="text-xs font-semibold mb-1" style="color: #0369a1; font-family: {{config.theme.fontFamily}};">Fixed</p>
+          <p class="text-2xl font-black" style="color: {{config.theme.primaryColor}}; font-family: {{config.theme.fontFamily}};">1</p>
+          <p class="text-xs" style="color: {{config.theme.secondaryColor}}; font-family: {{config.theme.fontFamily}};">greeting / visit</p>
+        </div>
+
+        <span class="text-2xl font-black" style="color: {{config.theme.primaryColor}}; font-family: {{config.theme.fontFamily}};">=</span>
+
+        <div class="rounded-xl px-5 py-3 text-center" style="background-color: {{config.theme.primaryColor}};">
+          <p class="text-xs font-semibold mb-1" style="color: {{config.theme.accentColor}}; font-family: {{config.theme.fontFamily}};">WVO</p>
+          <p class="text-2xl font-black" style="color: white; font-family: {{config.theme.fontFamily}};">20 / week</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Value Block -->
+    <div class="rounded-2xl p-5" style="background-color: {{config.theme.accentColor}};">
+      <h3 class="text-xs font-bold uppercase tracking-widest mb-2" style="color: white; font-family: {{config.theme.fontFamily}}; opacity: 0.7;">Value</h3>
+      <p class="text-sm font-semibold leading-relaxed" style="color: white; font-family: {{config.theme.fontFamily}};">
+        20 greetings/week × qualitative personal brand value = <strong>sustained online presence, 52 weeks / year</strong>
+      </p>
+      <p class="text-xs mt-2" style="color: white; font-family: {{config.theme.fontFamily}}; opacity: 0.55;">
+        No direct revenue modelled — value is visibility, shareability, and always-on personal identity.
+      </p>
+    </div>
+
+  </div>
+</section>
